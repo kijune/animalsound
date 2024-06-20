@@ -10,13 +10,13 @@ app.get('/user/:abc', (req, res) => {
   const { abc } = req.params
   console.log(abc)
  if(abc=='dog'){
-  res.send('멍멍')  
+  res.send({'sound' : '멍멍'})  
  } 
  else if(abc=='cat'){
-  res.send('야옹')
+  res.send({'sound' : '야옹'})
  }
  else{
-  res.send('알수없음')
+  res.send({'sound' : '알수없음'})
  }
 })
 
