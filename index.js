@@ -4,10 +4,7 @@ const app = express()
 
 const port = 3000
 
-app.use(cors({
-  origin: "file:///D:/coding/jocoding/index.html",
-  credentials: true,
-}));
+app.use(cors({ origin: '*' }));
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
