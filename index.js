@@ -4,7 +4,10 @@ const app = express()
 
 const port = 3000
 
-app.use(cors({ origin: '*' }));
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true,
+}));
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
